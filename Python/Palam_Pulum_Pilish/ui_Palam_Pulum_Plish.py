@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'gameboard.ui'
+## Form generated from reading UI file 'Palam_Pulum_Plish.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(429, 540)
+        MainWindow.resize(429, 563)
         sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -34,9 +34,9 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.back1 = QPushButton(self.centralwidget)
         self.back1.setObjectName(u"back1")
-        self.back1.setGeometry(QRect(200, 400, 91, 91))
+        self.back1.setGeometry(QRect(200, 420, 91, 91))
         font = QFont()
-        font.setFamilies([u"Segoe UI Emoji"])
+        font.setFamilies([u"Segoe UI"])
         font.setPointSize(25)
         self.back1.setFont(font)
         self.back1.setStyleSheet(u"background-color: rgb(255, 88, 124);\n"
@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
 "border-bottom-left-radius: 5px;")
         self.front1 = QPushButton(self.centralwidget)
         self.front1.setObjectName(u"front1")
-        self.front1.setGeometry(QRect(310, 400, 91, 91))
+        self.front1.setGeometry(QRect(310, 420, 91, 91))
         self.front1.setFont(font)
         self.front1.setStyleSheet(u"background-color: rgb(255, 88, 124);\n"
 "border-top-right-radius: 5px;\n"
@@ -55,9 +55,9 @@ class Ui_MainWindow(object):
 "border-bottom-left-radius: 5px;")
         self.player_choice = QLineEdit(self.centralwidget)
         self.player_choice.setObjectName(u"player_choice")
-        self.player_choice.setGeometry(QRect(200, 280, 201, 111))
+        self.player_choice.setGeometry(QRect(200, 300, 201, 111))
         font1 = QFont()
-        font1.setFamilies([u"Segoe UI Emoji"])
+        font1.setFamilies([u"Segoe UI"])
         font1.setPointSize(60)
         font1.setBold(False)
         self.player_choice.setFont(font1)
@@ -70,9 +70,9 @@ class Ui_MainWindow(object):
         self.player_choice.setAlignment(Qt.AlignCenter)
         self.computer_choice = QLineEdit(self.centralwidget)
         self.computer_choice.setObjectName(u"computer_choice")
-        self.computer_choice.setGeometry(QRect(200, 100, 201, 111))
+        self.computer_choice.setGeometry(QRect(200, 120, 201, 111))
         font2 = QFont()
-        font2.setFamilies([u"Segoe UI Emoji"])
+        font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(60)
         self.computer_choice.setFont(font2)
         self.computer_choice.setStyleSheet(u"background-color: rgb(170, 255, 255);\n"
@@ -84,7 +84,7 @@ class Ui_MainWindow(object):
         self.computer_choice.setAlignment(Qt.AlignCenter)
         self.main = QLineEdit(self.centralwidget)
         self.main.setObjectName(u"main")
-        self.main.setGeometry(QRect(10, 190, 151, 111))
+        self.main.setGeometry(QRect(10, 210, 151, 111))
         self.main.setFont(font2)
         self.main.setStyleSheet(u"background-color: rgb(85, 255, 127);\n"
 "border-top-right-radius: 15px;\n"
@@ -95,7 +95,7 @@ class Ui_MainWindow(object):
         self.main.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
         self.back2 = QPushButton(self.centralwidget)
         self.back2.setObjectName(u"back2")
-        self.back2.setGeometry(QRect(200, 0, 91, 91))
+        self.back2.setGeometry(QRect(200, 20, 91, 91))
         self.back2.setFont(font)
         self.back2.setStyleSheet(u"background-color: rgb(85, 255, 255);\n"
 "border-top-right-radius: 5px;\n"
@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
 "border-bottom-left-radius: 5px;")
         self.front2 = QPushButton(self.centralwidget)
         self.front2.setObjectName(u"front2")
-        self.front2.setGeometry(QRect(310, 0, 91, 91))
+        self.front2.setGeometry(QRect(310, 20, 91, 91))
         self.front2.setFont(font)
         self.front2.setStyleSheet(u"background-color: rgb(85, 255, 255);\n"
 "border-top-right-radius: 5px;\n"
@@ -115,7 +115,7 @@ class Ui_MainWindow(object):
         self.player_score.setObjectName(u"player_score")
         self.player_score.setGeometry(QRect(40, 330, 91, 61))
         font3 = QFont()
-        font3.setFamilies([u"Segoe UI Emoji"])
+        font3.setFamilies([u"Segoe UI"])
         font3.setPointSize(30)
         font3.setBold(True)
         font3.setUnderline(True)
@@ -129,7 +129,7 @@ class Ui_MainWindow(object):
         self.player_score.setAlignment(Qt.AlignCenter)
         self.computer_score = QLineEdit(self.centralwidget)
         self.computer_score.setObjectName(u"computer_score")
-        self.computer_score.setGeometry(QRect(40, 100, 91, 61))
+        self.computer_score.setGeometry(QRect(40, 130, 91, 61))
         self.computer_score.setFont(font3)
         self.computer_score.setStyleSheet(u"color: rgb(85, 255, 255);\n"
 "border-top-right-radius: 5px;\n"
@@ -140,20 +140,20 @@ class Ui_MainWindow(object):
         self.computer_score.setAlignment(Qt.AlignCenter)
         self.computer = QRadioButton(self.centralwidget)
         self.computer.setObjectName(u"computer")
-        self.computer.setGeometry(QRect(20, 10, 161, 20))
+        self.computer.setGeometry(QRect(20, 30, 161, 20))
         font4 = QFont()
         font4.setPointSize(10)
         font4.setBold(True)
         self.computer.setFont(font4)
         self.player = QRadioButton(self.centralwidget)
         self.player.setObjectName(u"player")
-        self.player.setGeometry(QRect(20, 40, 161, 20))
+        self.player.setGeometry(QRect(20, 60, 161, 20))
         self.player.setFont(font4)
         self.win = QLineEdit(self.centralwidget)
         self.win.setObjectName(u"win")
-        self.win.setGeometry(QRect(170, 230, 251, 31))
+        self.win.setGeometry(QRect(170, 250, 251, 31))
         font5 = QFont()
-        font5.setFamilies([u"Segoe UI Emoji"])
+        font5.setFamilies([u"Segoe UI"])
         font5.setPointSize(13)
         font5.setBold(True)
         self.win.setFont(font5)
@@ -180,13 +180,13 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Palam Pulum Plish", None))
-        self.back1.setText(QCoreApplication.translate("MainWindow", u"\ud83e\udd1a\ud83c\udffb", None))
-        self.front1.setText(QCoreApplication.translate("MainWindow", u"\u270b\ud83c\udffb", None))
+        self.back1.setText("")
+        self.front1.setText("")
         self.player_choice.setText("")
         self.computer_choice.setText("")
         self.main.setText("")
-        self.back2.setText(QCoreApplication.translate("MainWindow", u"\ud83e\udd1a\ud83c\udffb", None))
-        self.front2.setText(QCoreApplication.translate("MainWindow", u"\u270b\ud83c\udffb", None))
+        self.back2.setText("")
+        self.front2.setText("")
         self.player_score.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.computer_score.setInputMask("")
         self.computer_score.setText(QCoreApplication.translate("MainWindow", u"0", None))
