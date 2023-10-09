@@ -16,8 +16,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QLineEdit, QMainWindow, QMenuBar,
-    QPushButton, QRadioButton, QSizePolicy, QStatusBar,
-    QWidget)
+    QPushButton, QSizePolicy, QStatusBar, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -32,88 +31,70 @@ class Ui_MainWindow(object):
         MainWindow.setStyleSheet(u"background-color: rgb(167, 167, 167);")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.back1 = QPushButton(self.centralwidget)
-        self.back1.setObjectName(u"back1")
-        self.back1.setGeometry(QRect(200, 420, 91, 91))
+        self.back = QPushButton(self.centralwidget)
+        self.back.setObjectName(u"back")
+        self.back.setGeometry(QRect(110, 410, 91, 91))
         font = QFont()
         font.setFamilies([u"Segoe UI"])
         font.setPointSize(25)
-        self.back1.setFont(font)
-        self.back1.setStyleSheet(u"background-color: rgb(255, 88, 124);\n"
+        self.back.setFont(font)
+        self.back.setStyleSheet(u"background-color: rgb(255, 88, 124);\n"
 "border-top-right-radius: 5px;\n"
 "border-top-left-radius: 5px;\n"
 "border-bottom-right-radius: 5px;\n"
 "border-bottom-left-radius: 5px;")
-        self.front1 = QPushButton(self.centralwidget)
-        self.front1.setObjectName(u"front1")
-        self.front1.setGeometry(QRect(310, 420, 91, 91))
-        self.front1.setFont(font)
-        self.front1.setStyleSheet(u"background-color: rgb(255, 88, 124);\n"
+        self.front = QPushButton(self.centralwidget)
+        self.front.setObjectName(u"front")
+        self.front.setGeometry(QRect(220, 410, 91, 91))
+        self.front.setFont(font)
+        self.front.setStyleSheet(u"background-color: rgb(255, 88, 124);\n"
 "border-top-right-radius: 5px;\n"
 "border-top-left-radius: 5px;\n"
 "border-bottom-right-radius: 5px;\n"
 "border-bottom-left-radius: 5px;")
-        self.player_choice = QLineEdit(self.centralwidget)
-        self.player_choice.setObjectName(u"player_choice")
-        self.player_choice.setGeometry(QRect(200, 300, 201, 111))
+        self.player = QLineEdit(self.centralwidget)
+        self.player.setObjectName(u"player")
+        self.player.setGeometry(QRect(110, 280, 201, 111))
         font1 = QFont()
         font1.setFamilies([u"Segoe UI"])
         font1.setPointSize(60)
         font1.setBold(False)
-        self.player_choice.setFont(font1)
-        self.player_choice.setStyleSheet(u"background-color: rgb(255, 119, 148);\n"
+        self.player.setFont(font1)
+        self.player.setStyleSheet(u"background-color: rgb(255, 119, 148);\n"
 "border-top-right-radius: 15px;\n"
 "border-top-left-radius: 15px;\n"
 "border-bottom-right-radius: 15px;\n"
 "border-bottom-left-radius: 15px;")
-        self.player_choice.setMaxLength(2)
-        self.player_choice.setAlignment(Qt.AlignCenter)
-        self.computer_choice = QLineEdit(self.centralwidget)
-        self.computer_choice.setObjectName(u"computer_choice")
-        self.computer_choice.setGeometry(QRect(200, 120, 201, 111))
+        self.player.setMaxLength(2)
+        self.player.setAlignment(Qt.AlignCenter)
+        self.computer2 = QLineEdit(self.centralwidget)
+        self.computer2.setObjectName(u"computer2")
+        self.computer2.setGeometry(QRect(220, 80, 181, 111))
         font2 = QFont()
         font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(60)
-        self.computer_choice.setFont(font2)
-        self.computer_choice.setStyleSheet(u"background-color: rgb(170, 255, 255);\n"
+        self.computer2.setFont(font2)
+        self.computer2.setStyleSheet(u"background-color: rgb(170, 255, 255);\n"
 "border-top-right-radius: 15px;\n"
 "border-top-left-radius: 15px;\n"
 "border-bottom-right-radius: 15px;\n"
 "border-bottom-left-radius: 15px;")
-        self.computer_choice.setMaxLength(2)
-        self.computer_choice.setAlignment(Qt.AlignCenter)
-        self.main = QLineEdit(self.centralwidget)
-        self.main.setObjectName(u"main")
-        self.main.setGeometry(QRect(10, 210, 151, 111))
-        self.main.setFont(font2)
-        self.main.setStyleSheet(u"background-color: rgb(85, 255, 127);\n"
+        self.computer2.setMaxLength(2)
+        self.computer2.setAlignment(Qt.AlignCenter)
+        self.computer1 = QLineEdit(self.centralwidget)
+        self.computer1.setObjectName(u"computer1")
+        self.computer1.setGeometry(QRect(20, 80, 181, 111))
+        self.computer1.setFont(font2)
+        self.computer1.setStyleSheet(u"background-color: rgb(85, 255, 127);\n"
 "border-top-right-radius: 15px;\n"
 "border-top-left-radius: 15px;\n"
 "border-bottom-right-radius: 15px;\n"
 "border-bottom-left-radius: 15px;")
-        self.main.setMaxLength(2)
-        self.main.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
-        self.back2 = QPushButton(self.centralwidget)
-        self.back2.setObjectName(u"back2")
-        self.back2.setGeometry(QRect(200, 20, 91, 91))
-        self.back2.setFont(font)
-        self.back2.setStyleSheet(u"background-color: rgb(85, 255, 255);\n"
-"border-top-right-radius: 5px;\n"
-"border-top-left-radius: 5px;\n"
-"border-bottom-right-radius: 5px;\n"
-"border-bottom-left-radius: 5px;")
-        self.front2 = QPushButton(self.centralwidget)
-        self.front2.setObjectName(u"front2")
-        self.front2.setGeometry(QRect(310, 20, 91, 91))
-        self.front2.setFont(font)
-        self.front2.setStyleSheet(u"background-color: rgb(85, 255, 255);\n"
-"border-top-right-radius: 5px;\n"
-"border-top-left-radius: 5px;\n"
-"border-bottom-right-radius: 5px;\n"
-"border-bottom-left-radius: 5px;")
+        self.computer1.setMaxLength(2)
+        self.computer1.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
         self.player_score = QLineEdit(self.centralwidget)
         self.player_score.setObjectName(u"player_score")
-        self.player_score.setGeometry(QRect(40, 330, 91, 61))
+        self.player_score.setGeometry(QRect(10, 300, 91, 61))
         font3 = QFont()
         font3.setFamilies([u"Segoe UI"])
         font3.setPointSize(30)
@@ -127,43 +108,79 @@ class Ui_MainWindow(object):
 "border-bottom-left-radius: 5px;")
         self.player_score.setMaxLength(1)
         self.player_score.setAlignment(Qt.AlignCenter)
-        self.computer_score = QLineEdit(self.centralwidget)
-        self.computer_score.setObjectName(u"computer_score")
-        self.computer_score.setGeometry(QRect(40, 130, 91, 61))
-        self.computer_score.setFont(font3)
-        self.computer_score.setStyleSheet(u"color: rgb(85, 255, 255);\n"
+        self.scoreC2 = QLineEdit(self.centralwidget)
+        self.scoreC2.setObjectName(u"scoreC2")
+        self.scoreC2.setGeometry(QRect(270, 10, 91, 61))
+        self.scoreC2.setFont(font3)
+        self.scoreC2.setStyleSheet(u"color: rgb(85, 255, 255);\n"
 "border-top-right-radius: 5px;\n"
 "border-top-left-radius: 5px;\n"
 "border-bottom-right-radius: 5px;\n"
 "border-bottom-left-radius: 5px;")
-        self.computer_score.setMaxLength(1)
-        self.computer_score.setAlignment(Qt.AlignCenter)
-        self.computer = QRadioButton(self.centralwidget)
-        self.computer.setObjectName(u"computer")
-        self.computer.setGeometry(QRect(20, 30, 161, 20))
-        font4 = QFont()
-        font4.setPointSize(10)
-        font4.setBold(True)
-        self.computer.setFont(font4)
-        self.player = QRadioButton(self.centralwidget)
-        self.player.setObjectName(u"player")
-        self.player.setGeometry(QRect(20, 60, 161, 20))
-        self.player.setFont(font4)
+        self.scoreC2.setMaxLength(1)
+        self.scoreC2.setAlignment(Qt.AlignCenter)
         self.win = QLineEdit(self.centralwidget)
         self.win.setObjectName(u"win")
-        self.win.setGeometry(QRect(170, 250, 251, 31))
-        font5 = QFont()
-        font5.setFamilies([u"Segoe UI"])
-        font5.setPointSize(13)
-        font5.setBold(True)
-        self.win.setFont(font5)
+        self.win.setGeometry(QRect(10, 230, 411, 41))
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setPointSize(13)
+        font4.setBold(True)
+        self.win.setFont(font4)
         self.win.setStyleSheet(u"background-color: rgb(255, 255, 127);\n"
-"border-top-right-radius: 15px;\n"
-"border-top-left-radius: 15px;\n"
-"border-bottom-right-radius: 15px;\n"
-"border-bottom-left-radius: 15px;")
-        self.win.setMaxLength(13)
+"border-top-right-radius: 20px;\n"
+"border-top-left-radius: 20px;\n"
+"border-bottom-right-radius: 20px;\n"
+"border-bottom-left-radius: 20px;")
+        self.win.setMaxLength(15)
         self.win.setAlignment(Qt.AlignCenter)
+        self.scoreC1 = QLineEdit(self.centralwidget)
+        self.scoreC1.setObjectName(u"scoreC1")
+        self.scoreC1.setGeometry(QRect(60, 10, 91, 61))
+        self.scoreC1.setFont(font3)
+        self.scoreC1.setStyleSheet(u"color: rgb(85, 255, 127);\n"
+"border-top-right-radius: 5px;\n"
+"border-top-left-radius: 5px;\n"
+"border-bottom-right-radius: 5px;\n"
+"border-bottom-left-radius: 5px;")
+        self.scoreC1.setMaxLength(1)
+        self.scoreC1.setAlignment(Qt.AlignCenter)
+        self.name1 = QLineEdit(self.centralwidget)
+        self.name1.setObjectName(u"name1")
+        self.name1.setGeometry(QRect(50, 200, 113, 21))
+        font5 = QFont()
+        font5.setPointSize(11)
+        font5.setBold(True)
+        self.name1.setFont(font5)
+        self.name1.setStyleSheet(u"color: rgb(85, 255, 127);\n"
+"border-top-right-radius: 5px;\n"
+"border-top-left-radius: 5px;\n"
+"border-bottom-right-radius: 5px;\n"
+"border-bottom-left-radius: 5px;")
+        self.name1.setAlignment(Qt.AlignCenter)
+        self.name2 = QLineEdit(self.centralwidget)
+        self.name2.setObjectName(u"name2")
+        self.name2.setGeometry(QRect(250, 200, 113, 21))
+        self.name2.setFont(font5)
+        self.name2.setStyleSheet(u"color: rgb(85, 255, 255);\n"
+"border-top-right-radius: 5px;\n"
+"border-top-left-radius: 5px;\n"
+"border-bottom-right-radius: 5px;\n"
+"border-bottom-left-radius: 5px;")
+        self.name2.setAlignment(Qt.AlignCenter)
+        self.name = QLineEdit(self.centralwidget)
+        self.name.setObjectName(u"name")
+        self.name.setGeometry(QRect(320, 320, 71, 31))
+        font6 = QFont()
+        font6.setPointSize(15)
+        font6.setBold(True)
+        self.name.setFont(font6)
+        self.name.setStyleSheet(u"color: rgb(255, 119, 148);\n"
+"border-top-right-radius: 5px;\n"
+"border-top-left-radius: 5px;\n"
+"border-bottom-right-radius: 5px;\n"
+"border-bottom-left-radius: 5px;")
+        self.name.setAlignment(Qt.AlignCenter)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -180,18 +197,19 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Palam Pulum Plish", None))
-        self.back1.setText("")
-        self.front1.setText("")
-        self.player_choice.setText("")
-        self.computer_choice.setText("")
-        self.main.setText("")
-        self.back2.setText("")
-        self.front2.setText("")
+        self.back.setText("")
+        self.front.setText("")
+        self.player.setText("")
+        self.computer2.setText("")
+        self.computer1.setText("")
         self.player_score.setText(QCoreApplication.translate("MainWindow", u"0", None))
-        self.computer_score.setInputMask("")
-        self.computer_score.setText(QCoreApplication.translate("MainWindow", u"0", None))
-        self.computer.setText(QCoreApplication.translate("MainWindow", u"Player vs. Computer", None))
-        self.player.setText(QCoreApplication.translate("MainWindow", u"2 Player", None))
+        self.scoreC2.setInputMask("")
+        self.scoreC2.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.win.setText("")
+        self.scoreC1.setInputMask("")
+        self.scoreC1.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.name1.setText(QCoreApplication.translate("MainWindow", u"Computer 1", None))
+        self.name2.setText(QCoreApplication.translate("MainWindow", u"Computer 2", None))
+        self.name.setText(QCoreApplication.translate("MainWindow", u"Player", None))
     # retranslateUi
 
